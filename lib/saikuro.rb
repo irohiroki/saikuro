@@ -1074,8 +1074,8 @@ class SaikuroCMDLineRunner
 
   # modification to RDoc.usage that allows main_program_file to be set
   # for RDoc.usage
-  require 'saikuro/usage'
-  RDoc::main_program_file = __FILE__
+  # require 'saikuro/usage'
+  # RDoc::main_program_file = __FILE__
 
   include ResultIndexGenerator
   
