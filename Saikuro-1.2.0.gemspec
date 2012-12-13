@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = nil if s.respond_to? :required_rubygems_version=
   s.authors = ["Zev Blut"]
-  s.cert_chain = nil
+  s.cert_chain = []
   s.date = %q{2008-06-20}
   s.default_executable = %q{saikuro}
   s.email = %q{zb@ubit.com}
