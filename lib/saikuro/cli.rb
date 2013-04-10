@@ -5,7 +5,7 @@ module Saikuro
   require 'getoptlong'
   require 'fileutils'
   require 'find'
-  require 'rdoc/usage'
+  # require 'rdoc/usage'
 
   include ResultIndexGenerator
 
@@ -39,8 +39,8 @@ module Saikuro
       case arg
       when "-o"
         output_dir = val
-      when "-h"
-        RDoc.usage('help')
+      # when "-h"
+      #   RDoc.usage('help')
       when "-f"
         formater = val
       when "-c"
@@ -69,9 +69,9 @@ module Saikuro
       end
 
     end
-    RDoc.usage if !comp_state && !comp_token
-  rescue => err
-    RDoc.usage
+  #   RDoc.usage if !comp_state && !comp_token
+  # rescue => err
+  #   RDoc.usage
   end
 
   if formater =~ /html/i
